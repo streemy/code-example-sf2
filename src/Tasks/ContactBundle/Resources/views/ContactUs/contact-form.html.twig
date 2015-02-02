@@ -1,0 +1,36 @@
+{% extends 'TasksContactBundle::layout.html.twig' %}
+ {% block title %}Contact Us{% endblock %}
+ {% block body %}
+     <div id="contact-form">
+         <h1>Contact Us Page</h1>
+         <form novalidate action="{{ path('tasks_contact') }}" method="post" {{ form_enctype(form) }}>
+             <div class="errors">
+                     {{ form_errors(form) }}
+                     {{ form_errors(form.name) }}
+                     {{ form_errors(form.email) }}
+                     {{ form_errors(form.subject) }}
+                     {{ form_errors(form.message) }}
+             </div>
+             <div>
+                 {{ form_label(form.name) }}
+                 {{ form_widget(form.name) }}
+             </div>
+             <div>
+                 {{ form_label(form.email) }}
+                 {{ form_widget(form.email) }}
+             </div>
+             <div>
+                 {{ form_label(form.subject) }}
+                 {{ form_widget(form.subject) }}
+             </div>
+             <div>
+                 {{ form_label(form.message) }}
+                 {{ form_widget(form.message) }}
+             </div>
+             {{ form_row(form.send) }}
+
+             {{ form_rest(form) }}
+
+         </form>
+     </div>
+ {% endblock %}

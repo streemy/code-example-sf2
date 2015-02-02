@@ -1,0 +1,12 @@
+services:
+
+    tasks_contact_enquiry:
+        class: Tasks\ContactBundle\Entity\Message
+
+    tasks_contact_form:
+        class: Tasks\ContactBundle\Form\Type\ContactType
+
+    tasks_contact_message.model:
+        class: Tasks\ContactBundle\Model\MessageModel
+        calls:
+            - [setContainer,[@service_container]]

@@ -1,0 +1,74 @@
+body {
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#contact-form a {
+    color: #0088CC;
+}
+
+#contact-form a:hover {
+    color: #009AFD;
+}
+
+#contact-form input[type=text],
+#contact-form input[type=email],
+#contact-form textarea {
+    width: 300px;
+    border-radius: 5px;
+    padding: 5px 5px 5px 10px;
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+
+}
+
+#contact-form label {
+    min-width: 200px;
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+}
+
+#contact-form form > div {
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    color: #aaaaaa;
+    text-shadow: 2px 2px 2px #5eb5e0;
+    font-size: 25px;
+    width: 475px;
+    margin: 0 auto;
+}
+#contact-form div.errors {
+    color: #aa3333;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    line-height: 25px;
+    text-shadow: none;
+
+}
+#contact-form div.errors ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contact-form div.success {
+    background-color: #48ea9f;
+    color: #333;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 0;
+    border-radius: 5px;
+    line-height: 25px;
+    text-shadow: none;
+}
+#contact-form div.message {
+    color: #333;
+    font-size: 17px;
+    line-height: 20px;
+    text-shadow: none;
+}

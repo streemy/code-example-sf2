@@ -1,0 +1,17 @@
+{% extends 'TasksContactBundle::layout.html.twig' %}
+ {% block title %}Contact Us{% endblock %}
+ {% block body %}
+     <div id="contact-form">
+         <h1>Contact Us Page</h1>
+         <div class="success">
+             <h2>Thanks, {{ name }} !<br/>Message sent successful!</h2>
+
+         </div>
+         <div class="message">
+             <h3>We answer you on this email-address - "{{ email }}"</h3>
+             <a href="{{ url('tasks_contact') }}">
+                 Return to sent new message!
+             </a>
+         </div>
+     </div>
+ {% endblock %}

@@ -1,0 +1,20 @@
+parameters:
+    database_driver: pdo_mysql
+    database_host: #to specify host e.g. localhost or 127.0.0.1
+    database_port: #to specify port e.g. null
+    database_name: #to specify DB e.g. symfony
+    database_user: #to specify DB user e.g. root
+    database_password: #to specify password
+
+    mailer_transport: #to specify e.g. gmail or smtp
+#    mailer_encryption: #to specify e.g. ssl
+#    mailer_auth_mode:  #to specify e.g. login
+    mailer_host: ~ #to specify host
+    mailer_user: #to specify e.g example@gmail.com
+    mailer_password: #to specify password from "%mailer_user%"
+    mailer_delivery_address: #to specify delivery-address e.g.test-examlple@gmail.com
+#    mailer_port: #e.g. for gmail 465 or 587
+
+    locale: en
+    secret: 
+    database_path: #e.g null

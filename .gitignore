@@ -11,7 +11,7 @@
 !var/logs/.gitkeep
 
 # Parameters
-/app/config/parameters.yml
+#/app/config/parameters.yml
 /app/config/parameters.ini
 
 # Managed by Composer
@@ -32,3 +32,7 @@
 
 # Composer PHAR
 /composer.phar
+
+# IDE PHPStorm
+/.idea
+/.idea/*

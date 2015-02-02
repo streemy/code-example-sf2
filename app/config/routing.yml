@@ -1,0 +1,3 @@
+tasks_contact:
+    resource: "@TasksContactBundle/Resources/config/routing.yml"
+    prefix:   /contact-us

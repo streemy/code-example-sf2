@@ -1,0 +1,16 @@
+Tasks\ContactBundle\Entity\Message:
+    properties:
+        name:
+            - NotBlank:
+                  message: Name should not be blank
+        email:
+            - NotBlank:
+                  message: Email should not be blank
+            - Email:
+                  message: The email "{{ value }}" is not a valid email
+        subject:
+             - NotBlank:
+                  message: Subject should not be blank
+        message:
+             - NotBlank:
+                  message: Message should not be blank.
